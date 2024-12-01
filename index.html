@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div id="menu-icon" class="menu-icon">☰</div>
+    <div id="menu" class="menu hidden">
+      <a href="#home">Home</a>
+      <a href="#blogs">Our Blogs</a>
+      <a href="#about">About</a>
+      <a href="#buy-me-a-coffee">Buy Me a Coffee</a>
+    </div>
+  </nav>
+
+  <!-- Login Section -->
+  <div id="login-screen" class="login-screen">
+    <h1>Welcome to our Educational Blog!</h1>
+    <p>Login to explore amazing content.</p>
+    
+    <!-- Login Form -->
+    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+    <input type="password" id="password" placeholder="Enter your password" required>
+    <button id="login-button" class="btn">Login</button>
+    <button id="skip-button" class="btn">Skip</button>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" class="hidden">
+    <section id="home" class="section">Welcome to the Home Section</section>
+    <section id="blogs" class="section">Our Blogs will inspire you!</section>
+    <section id="about" class="section">About Our Educational Blog</section>
+    <section id="buy-me-a-coffee" class="section hidden">
+      <h2>Buy Me a Coffee</h2>
+      <button id="buy-coffee-button" class="btn support-btn">Support Us</button>
+    </section>
+  </div>
+
+  <!-- Payment Modal -->
+  <div id="payment-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Buy Me a Coffee</h3>
+      <p>Support us with ₹500</p>
+      <input id="upi-id" type="text" value="9014213240@ybl" readonly>
+      <button id="upi-copy-button" class="btn">Copy UPI ID</button>
+      <button id="close-modal" class="btn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
